@@ -18,8 +18,6 @@ fi
 source $CONDA_INSTALL_DIR/etc/profile.d/conda.sh
 conda activate $ENVIRONMENT
 
-conda activate $ENVIRONMENT
-
 # Install python packages
 pip install -U pip
 pip install catkin_pkg empy rospkg rosdistro lark packaging importlib_resources
@@ -33,7 +31,6 @@ sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 sudo apt update
-sudo apt dist-upgrade
 
 # Install colcon with mixin
 sudo apt install python3-colcon-common-extensions
